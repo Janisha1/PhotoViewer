@@ -1,0 +1,15 @@
+.PageTitle {
+    color: rgb(0, 0, 0);
+    margin-top: 0;
+    font-size: 2em;
+    text-align: left;
+  }
+
+  .SelectPhotoTitle {
+    color: black;
+    font-size: 1.5em;
+  }
+
+  .ImageThumbnails{
+    margin: 0.25em;
+  }
