@@ -13,8 +13,8 @@ function App() {
   return (
     <div>
       <h1 className='PageTitle'>React Photo Viewer</h1>
-      <PhotoViewer imageUrl={imageUrl}/>
-      <ImageSelector/>
+      <PhotoViewer imageUrl={imageUrl} />
+      <ImageSelector setImageUrl={setImageUrl}/>
     </div>
 
     // <>

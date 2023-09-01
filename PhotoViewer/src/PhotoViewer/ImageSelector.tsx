@@ -19,12 +19,12 @@ function getImageUrls() {
 
 export const imageUrls = getImageUrls();
 
-export function ImageSelector() {    // declare and export new function called ImageSelector
+export function ImageSelector({setImageUrl}) {    // declare and export new function called ImageSelector
     return (                
         <div>
             <h2 className="SelectPhotoTitle">Select your photo</h2>
             <p className="ImageThumbnails">
-                {imageUrls.map((imageUrl) => <img src={imageUrl} alt="Image Thumbnail"  />)}            
+                {imageUrls.map((imageUrl) => <img src={imageUrl} alt="Image Thumbnail" onClick={() => setImageUrl(imageUrl)} />)}            
             </p>
         </div>
     );
